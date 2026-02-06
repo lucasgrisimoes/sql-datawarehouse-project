@@ -1,3 +1,9 @@
+/*
+COMO IMPORTAR CSV COM DOCKER NO MAC OS
+- Suba o arquivo no Docker usando o terminal e escrevendo 'docker cp <caminho_do_arquivo> <IDcontainerDocker> :/<nome_documento>
+- No SQL referencie como a última parte, ou seja: :/<nome_documento>
+*/
+
 TRUNCATE TABLE bronze.crm_cust_info
 
 BULK INSERT bronze.crm_cust_info
