@@ -74,6 +74,12 @@ BEGIN
             TABLOCK
         );
 
+        -- Fórmula para resolver o problema de quebra de linha
+
+        UPDATE bronze.erp_cust_az12
+        SET gen = REPLACE(REPLACE(REPLACE(gen, CHAR(13), ''), CHAR(10), ''), CHAR(9), '')
+
+
         --------------------------
 
         TRUNCATE TABLE bronze.erp_loc_a101
